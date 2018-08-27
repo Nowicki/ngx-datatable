@@ -531,6 +531,7 @@ export class DataTableBodyComponent implements OnInit, OnDestroy {
    * @memberOf DataTableBodyComponent
    */
   getBottomSummaryRowStyles(): any {
+    return {position: 'absolute'};
     if (!this.scrollbarV || !this.rows || !this.rows.length) {
       return null;
     }

@@ -392,6 +392,7 @@ var DataTableBodyComponent = /** @class */ (function () {
      * @memberOf DataTableBodyComponent
      */
     DataTableBodyComponent.prototype.getBottomSummaryRowStyles = function () {
+        return { position: 'absolute' };
         if (!this.scrollbarV || !this.rows || !this.rows.length) {
             return null;
         }
